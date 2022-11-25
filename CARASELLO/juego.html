@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/juego.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <a href=""></a>
+    <div class="back">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="./juego.html">Reiniciar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <div>
+                        <a class="nav-link active" aria-current="page">Ganadas</a>
+                        <center><p id="ganar" class="punta"></p></center>
+                    </div>  
+                    </li>
+                    <li class="nav-item">
+                    <div>
+                        <a class="nav-link active" aria-current="page">Perdidas</a>
+                        <center><p id="perder" class="punta"></p></center>
+                    </div>  
+                    </li>
+                    <li class="nav-item">
+                    <div>
+                        <a class="nav-link active" aria-current="page">Intentos</a>
+                        <center><p id="intento" class="punta"></p></center>
+                    </div>  
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+        <div>
+        <br>   
+        <center>
+        <div class="caja" id="container_family">
+            <div>
+                <center>
+                    <label for="btn" class="put">Apuesta</label><br>
+                    <input type="text" id="inputt" aria-describedby="button-addon2">
+                </center>
+            </div>
+            <br>    
+            <div>
+                <button class="put" type="submit" id="caras">Cara</button>
+                <img class="i" id="a" src="img/dolar.png" width="50" height="48">
+                <br><br>
+                <button class="put" type="submit" id="sellos">Sello</button>
+                <img class="i" id="b" src="img/garantia.png" width="50" height="48">
+            </div>
+            <br>
+            <div>
+                <button id="terminarr">Finalizar</button>
+            </div>
+                </div>      
+            </div>
+        </div>
+    </center>
+    </div>  
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+</body>
+</html>
+
